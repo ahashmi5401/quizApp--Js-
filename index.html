@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="startScreen" id="startScreen">
+            <h2>Web Development Quiz</h2>
+            <button id="startQuiz">Start</button>
+        </div>
+        <div class="quizScreen hidden" id="quizScreen">
+            <h2>Web Development Quiz</h2>
+            <div class="currentQuestion">
+                <p class="questionNo">1/10</p>
+            </div>
+             <h3>2. What happens if you eat biryani before breakfast in Pakistan?</h3>
+             <div class="options" id="options">
+                 <button onclick="checkAns(this)" id="option1">1000$/day</button>
+                 <button onclick="checkAns(this)" id="option2">100000$/day</button>
+                 <button onclick="checkAns(this)" id="option3">1M$/month</button>
+                 <button onclick="checkAns(this)" id="option4">Direct CEO</button>
+                </div>
+                <div class="nextBtn">
+                    <button onclick="nextQuestion()" id="nextBtn">Next</button>
+                </div>
+        </div>
+        <div id="result">
+            <div class="startScreen hidden" id="resultScreen">
+            <h2>Web Development Quiz</h2>
+            <button id="resultQuiz">0/10</button>
+            <button id="restartBtn">Restart</button>
+        </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
